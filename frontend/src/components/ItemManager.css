@@ -1,0 +1,50 @@
+.item-manager {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .add-item-form {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .add-item-form input {
+    flex-grow: 1;
+    padding: 8px;
+  }
+  
+  .add-item-form button {
+    background-color: #6552FF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .item-list li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+  
+  .item-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .item-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }

@@ -1,0 +1,27 @@
+.recipe-display {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-display h2 {
+    margin-top: 0;
+  }
+  
+  .recipe-display h3 {
+    margin-bottom: 10px;
+  }
+  
+  .recipe-display h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .recipe-display ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .recipe-display li {
+    padding: 5px 0;
+  }

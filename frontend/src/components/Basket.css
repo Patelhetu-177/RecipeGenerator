@@ -1,0 +1,23 @@
+.basket {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .basket h2 {
+    margin-top: 0;
+  }
+  
+  .basket ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .basket li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .basket li:last-child {
+    border-bottom: none;
+  }

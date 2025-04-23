@@ -1,0 +1,29 @@
+.app {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.app h1 {
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.app button {
+  background-color: #6552FF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.app button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

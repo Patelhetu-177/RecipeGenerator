@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Ensure Poppins is included */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Include Poppins font (You might need to adjust the path) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
