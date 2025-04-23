@@ -1,50 +1,83 @@
 .item-manager {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .add-item-form {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  .add-item-form input {
-    flex-grow: 1;
-    padding: 8px;
-  }
-  
-  .add-item-form button {
-    background-color: #6552FF;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
-  
-  .item-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-height: 200px;
-    overflow-y: auto;
-  }
-  
-  .item-list li {
-    padding: 8px 12px;
-    border-bottom: 1px solid #eee;
-    cursor: pointer;
-  }
-  
-  .item-list li:last-child {
-    border-bottom: none;
-  }
-  
-  .item-list li:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .error {
-    color: red;
-    margin-top: 5px;
-  }
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item-manager h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-item-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-item-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.add-item-form input:focus {
+  outline: none;
+  border-color: #6552FF;
+}
+
+.add-item-form button {
+  background-color: #6552FF;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-item-form button:hover {
+  background-color: #5343cc;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+}
+
+.item-list li {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.item-list li:last-child {
+  border-bottom: none;
+}
+
+.item-list li:hover {
+  background-color: #f9f9ff;
+}
+
+.error {
+  color: #d9534f;
+  background: #fcebea;
+  padding: 8px 12px;
+  border-left: 4px solid #d9534f;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 10px;
+}

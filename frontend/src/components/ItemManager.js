@@ -15,7 +15,7 @@ const ItemManager = ({ onAddItemToBasket }) => {
   const fetchItems = async () => {
     setLoading(true); // Set loading to true while fetching
     try {
-      const response = await axios.get('http://localhost:5000/api/items');
+      const response = await axios.get('https://recipegenerator-gzj1.onrender.com/api/items');
       setItems(response.data);
       setError('');
     } catch (error) {
@@ -33,7 +33,7 @@ const ItemManager = ({ onAddItemToBasket }) => {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/items/add', { item: newItem });
+      await axios.post('https://recipegenerator-gzj1.onrender.com/api/items/add', { item: newItem });
       fetchItems();
       setNewItem('');
       setError('');

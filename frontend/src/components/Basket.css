@@ -1,23 +1,57 @@
 .basket {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin: 0 auto 40px auto;
+  max-width: 500px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.basket h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 24px;
+  color: #6552FF;
+}
+
+.basket p {
+  font-size: 16px;
+  margin: 8px 0;
+  text-align: center;
+  color: #555;
+}
+
+.basket ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.basket li {
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #444;
+  transition: background-color 0.2s ease;
+}
+
+.basket li:last-child {
+  border-bottom: none;
+}
+
+.basket li:hover {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+  .basket {
+    padding: 16px;
   }
-  
+
   .basket h2 {
-    margin-top: 0;
+    font-size: 20px;
   }
-  
-  .basket ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .basket li {
-    padding: 5px 0;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .basket li:last-child {
-    border-bottom: none;
-  }
+}

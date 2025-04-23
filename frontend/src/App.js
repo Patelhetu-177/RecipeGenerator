@@ -23,7 +23,7 @@ const App = () => {
 
         setRecipeError('');
         try {
-            const response = await axios.post('http://localhost:5000/api/recipes/generate', { basketItems });
+            const response = await axios.post('https://recipegenerator-gzj1.onrender.com/api/recipes/generate', { basketItems });
             setRecipe(response.data.recipe);
         } catch (error) {
             console.error('Error generating recipe:', error);

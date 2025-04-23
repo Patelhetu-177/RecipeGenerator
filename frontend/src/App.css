@@ -1,29 +1,61 @@
+/* Global Styling */
 .app {
   font-family: 'Poppins', sans-serif;
-  text-align: center;
-  padding: 20px;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app h1 {
-  color: #333;
+  font-size: 36px;
+  font-weight: 600;
+  color: #6552FF;
+  margin-bottom: 30px;
 }
 
+/* Container Layout */
 .container {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
 }
 
+/* Button Styling */
 .app button {
   background-color: #6552FF;
   color: white;
   border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  border-radius: 8px;
+  padding: 12px 24px;
   font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(101, 82, 255, 0.2);
+}
+
+.app button:hover:not(:disabled) {
+  background-color: #5742e9;
+  transform: translateY(-2px);
 }
 
 .app button:disabled {
-  background-color: #ccc;
+  background-color: #bbb;
   cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Error Message */
+.error {
+  color: #e63946;
+  font-weight: 500;
+  margin-top: 10px;
 }
